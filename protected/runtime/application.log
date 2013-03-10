@@ -1,0 +1,75 @@
+2013/03/04 09:46:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "guii".' in C:\wamp\framework\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\framework\framework\web\CWebApplication.php(142): CWebApplication->runController('guii')
+#1 C:\wamp\framework\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\jobs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/jobs/?r=guii
+---
+2013/03/04 11:19:54 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.jui.CJDatePicker" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\framework\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\framework\framework\web\CWidgetFactory.php(147): YiiBase::import('zii.widgets.jui...', true)
+#1 C:\wamp\framework\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(JobController), 'zii.widgets.jui...', Array)
+#2 C:\wamp\framework\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.jui...', Array)
+#3 C:\wamp\www\jobs\protected\views\job\_form.php(58): CBaseController->widget('zii.widgets.jui...', Array)
+#4 C:\wamp\framework\framework\web\CBaseController.php(127): require('C:\wamp\www\job...')
+#5 C:\wamp\framework\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\job...', Array, true)
+#6 C:\wamp\framework\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\job...', Array, true)
+#7 C:\wamp\www\jobs\protected\views\job\create.php(18): CController->renderPartial('_form', Array)
+#8 C:\wamp\framework\framework\web\CBaseController.php(127): require('C:\wamp\www\job...')
+#9 C:\wamp\framework\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\job...', Array, true)
+#10 C:\wamp\framework\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\job...', Array, true)
+#11 C:\wamp\framework\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\wamp\www\jobs\protected\controllers\JobController.php(79): CController->render('create', Array)
+#13 C:\wamp\framework\framework\web\actions\CInlineAction.php(50): JobController->actionCreate()
+#14 C:\wamp\framework\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\framework\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\framework\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\framework\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\framework\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\framework\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\framework\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\framework\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\framework\framework\web\CWebApplication.php(283): CController->run('create')
+#23 C:\wamp\framework\framework\web\CWebApplication.php(142): CWebApplication->runController('job/create')
+#24 C:\wamp\framework\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\jobs\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/jobs/index.php?r=job/create
+HTTP_REFERER=http://localhost/jobs/index.php?r=job
+---
+2013/03/04 11:21:34 [error] [exception.CException] exception 'CException' with message 'Property "Job.date_from" is not defined.' in C:\wamp\framework\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\framework\framework\db\ar\CActiveRecord.php(144): CComponent->__get('date_from')
+#1 C:\wamp\framework\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('date_from')
+#2 C:\wamp\framework\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Job), 'date_from')
+#3 C:\wamp\framework\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Job), 'date_from', Array)
+#4 C:\wamp\framework\framework\zii\widgets\jui\CJuiDatePicker.php(87): CHtml::activeTextField(Object(Job), 'date_from', Array)
+#5 C:\wamp\framework\framework\web\CBaseController.php(174): CJuiDatePicker->run()
+#6 C:\wamp\www\jobs\protected\views\job\_form.php(57): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\wamp\framework\framework\web\CBaseController.php(127): require('C:\wamp\www\job...')
+#8 C:\wamp\framework\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\job...', Array, true)
+#9 C:\wamp\framework\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\job...', Array, true)
+#10 C:\wamp\www\jobs\protected\views\job\create.php(18): CController->renderPartial('_form', Array)
+#11 C:\wamp\framework\framework\web\CBaseController.php(127): require('C:\wamp\www\job...')
+#12 C:\wamp\framework\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\job...', Array, true)
+#13 C:\wamp\framework\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\job...', Array, true)
+#14 C:\wamp\framework\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\jobs\protected\controllers\JobController.php(79): CController->render('create', Array)
+#16 C:\wamp\framework\framework\web\actions\CInlineAction.php(50): JobController->actionCreate()
+#17 C:\wamp\framework\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\framework\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\framework\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\wamp\framework\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\framework\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\framework\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\framework\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\wamp\framework\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\framework\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\wamp\framework\framework\web\CWebApplication.php(142): CWebApplication->runController('job/create')
+#27 C:\wamp\framework\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\wamp\www\jobs\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/jobs/index.php?r=job/create
+HTTP_REFERER=http://localhost/jobs/index.php?r=job
+---
